@@ -12,6 +12,11 @@
             int v2 = 100; 
 
             double t2 = CalcularTiempoAlcance(v1, v2); // Tiempo en horas que ha estado viajando el segundo tren
+
+            DateTime inicio = new DateTime(2023, 1, 1, 10, 0, 0); // Hora de inicio del primer tren
+            DateTime alcance = inicio.AddHours(t2); // Calcular la hora de alcance
+
+            Console.WriteLine($"El segundo tren alcanzará al primero a las: {alcance.ToString("HH:mm tt")}");
         }
     }
 }
