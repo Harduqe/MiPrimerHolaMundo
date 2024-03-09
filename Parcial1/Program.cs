@@ -18,5 +18,11 @@
 
             Console.WriteLine($"El segundo tren alcanzará al primero a las: {alcance.ToString("HH:mm tt")}");
         }
+
+        static double CalcularTiempoAlcance(int v1, int v2)
+        {
+            double d = 1000000; // Distancia en km (ajustar según necesidades)
+            return d / (v2 - v1); // Calcular el tiempo en horas que le toma al segundo tren alcanzar al primero
+        }
     }
 }
